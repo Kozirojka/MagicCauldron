@@ -1,0 +1,6 @@
+@MagicCauldrion.Gateway.Api_HostAddress = http://localhost:5189
+
+GET {{MagicCauldrion.Gateway.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
