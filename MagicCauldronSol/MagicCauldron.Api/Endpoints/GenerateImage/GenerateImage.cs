@@ -29,7 +29,7 @@ public class GenerateImage() : IEndpoint
         ImageGenerationOptions optionOfImage = new()
         {
             Quality = GeneratedImageQuality.High,
-            Size = GeneratedImageSize.W1792xH1024,
+            Size = GeneratedImageSize.W1024xH1024,
             Style = GeneratedImageStyle.Vivid,
             ResponseFormat = GeneratedImageFormat.Uri
         };
