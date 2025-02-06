@@ -11,8 +11,15 @@
         <PackageReference Include="ErrorOr" Version="2.0.1" />
         <PackageReference Include="FluentAssertions" Version="8.0.1" />
         <PackageReference Include="FluentValidation" Version="12.0.0-preview1" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.1" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
+        <PackageReference Include="MMLib.Ocelot.Provider.AppConfiguration" Version="3.0.0" />
+        <PackageReference Include="MMLib.SwaggerForOcelot" Version="8.3.2" />
         <PackageReference Include="OpenAI" Version="2.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.2.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.2.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.2.0" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.1" />
     </ItemGroup>
 
     <ItemGroup>

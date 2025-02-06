@@ -1,0 +1,11 @@
+{
+  "Routes" : [
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "UpstreamPathTemplate": "/magic-gate/{everything}",
+      "ServiceName": "magic",
+      "SwaggerKey": "magic",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    }
+  ]
+}

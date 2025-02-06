@@ -1,6 +1,0 @@
-@MagicCauldron.Api_HostAddress = http://localhost:5005
-
-GET {{MagicCauldron.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
