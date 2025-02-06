@@ -1,4 +1,5 @@
 using System.Text;
+using MagicCauldron.Api.Extension;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddRouting();
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -49,14 +52,20 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
     app.UseSwagger(); 
     app.UseSwaggerUI();
 }
 
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+app.RegisterAllEndpoints();
 
-app.MapControllers();
+app.MapGet("/api/clone", () => Results.Ok("All is good"));
+
+
+app.MapOpenApi();
 
 app.Run();
+
+

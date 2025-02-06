@@ -1,26 +1,13 @@
 {
   "SwaggerEndPoints": [
     {
-      "Key": "auth",
-      "Config": [
-        {
-          "Name": "Auth Web API",
-          "Version": "v1",
-          "Service": {
-            "Name": "auth",
-            "Path": "/swagger/v1/swagger.json"
-          }
-        }
-      ]
-    },
-    {
       "Key": "magic",
       "Config": [
         {
           "Name": "Magic Web API",
           "Version": "v1",
           "Service": {
-            "Name": "Magic",
+            "Name": "magic",
             "Path": "/swagger/v1/swagger.json"
           }
         }

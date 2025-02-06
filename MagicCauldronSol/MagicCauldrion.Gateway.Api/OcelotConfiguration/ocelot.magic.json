@@ -1,16 +1,11 @@
 {
-  "Router" : [
+  "Routes" : [
     {
       "DownstreamPathTemplate": "/api/{everything}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 7130
-        }
-      ],
-      "UpstreamPathTemplate": "/magic/{everything}",
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+      "UpstreamPathTemplate": "/magic-gate/{everything}",
+      "ServiceName": "magic",
+      "SwaggerKey": "magic",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
     }
   ]
 }

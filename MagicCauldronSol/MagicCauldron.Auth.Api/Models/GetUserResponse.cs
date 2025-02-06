@@ -1,4 +1,4 @@
-namespace AuthService.Models;
+namespace MagicCauldron.Auth.Api.Models;
 
 public class GetUserResponse
 {
